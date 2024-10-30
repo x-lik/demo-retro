@@ -23,7 +23,6 @@ end
 ---@param name string
 ---@param x number
 ---@param y number
----@param facing number
 ---@return number
 function slk.createItem(name, x, y)
     local it = J.CreateItem(J.C2I(slk.n2i(name)), x, y)
