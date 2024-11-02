@@ -18,7 +18,7 @@ J.TriggerAddCondition(tgr, J.Condition(function()
 end))
 
 function registerUnitDamaged(whichUnit)
-    if J.GetUnitAbilityLevel(whichUnit, XLIK_SLK_ID_ABILITY_LOCUST) <= 0 then
+    if J.GetUnitAbilityLevel(whichUnit, LK_SLK_ID_ABILITY_LOCUST) <= 0 then
         J.TriggerRegisterUnitEvent(tgr, whichUnit, EVENT_UNIT_DAMAGED)
     end
     return false
